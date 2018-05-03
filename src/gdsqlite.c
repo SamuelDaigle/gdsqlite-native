@@ -109,7 +109,7 @@ godot_variant sqlite_open(godot_object *obj, void *method_data, void *user_data,
 
 	// Open database
 	int err = sqlite3_open(path, &db);
-	api->godot_variant_new_bool(&ret, (err != SQLITE_OK) ? false : true);
+	api->godot_variant_new_int(&ret, err);
 	return ret;
 }
 

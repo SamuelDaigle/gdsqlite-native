@@ -8,7 +8,7 @@ env = Environment(ENV = os.environ);
 
 # Platform & bits
 platform = ARGUMENTS.get("p", "windows");
-bits = ARGUMENTS.get("bits", "64");
+bits = ARGUMENTS.get("bits", "32");
 
 # Include dir
 env.Append(CPPPATH=[godot_headers, 'src']);
